@@ -1,0 +1,10 @@
+# your private settings never get published
+profile.md
+**/profile.md
+persona.md
+**/persona.md
+*.jsonl
+*.profile.json
+__pycache__/
+.DS_Store
+dist/
