@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.2.0 (2026-10-13), experimental
+
+From a red-team voice session, with ChatGPT as the tester:
+- New "Honesty under pressure" rules:
+  - disconfirm before approving
+  - effort is not correctness, and say what would change your mind
+  - firm when sure, conditional only when it truly is
+  - acknowledge an upset in one line, then return to the problem
+  - warmth means staying, not agreeing
+  - frustration sharpens and never softens, with no contempt
+  - no backstage lines
+- A new pattern, "Your honest view disappoints them".
+- New evals S7 to S10 with concrete content, plus rules for running test sessions: declare the roles, use real content, keep scenario states within the caps.
+- The local model's prompts gain the same rules in short form.
+
 ## 0.1.0 (2026-10-13), experimental
 
 First public release.

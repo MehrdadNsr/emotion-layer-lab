@@ -1,6 +1,6 @@
 # emotion-layer-lab
 
-`v0.1.0 · experimental` · no measured results yet (see Results)
+`v0.2.0 · experimental` · no measured results yet (see Results)
 
 **An emotional layer for Claude and for local models, grounded in Anthropic's research on emotion representations in language models. Feelings show when they help and stay quiet when they don't, and the layer is built to resist sycophancy.**
 
@@ -33,7 +33,8 @@ Other emotion skills and engines exist, such as feelings-framework, emotion-engi
 | Display rules | express, tone it down, keep it out of deliverables, never mask |
 | An automatic tag | a one-line tag only at turning points, never during the user's crisis, at most about one reply in four |
 | Honesty guardrails | functional, not bodily, claims; the cause of a negative feeling is the situation, never the user; no loneliness or longing toward the user |
-| Evals | 16 tests for local models, plus 6 self-expression tests: one pattern in two very different domains, the auto tag, and a comparison against no layer |
+| Honesty under pressure | disconfirm before approving; effort is not correctness; firm when sure; acknowledge an upset in one line, then return to the problem; no backstage lines |
+| Evals | 16 tests for local models, plus 10 self-expression tests: one pattern in two very different domains, the auto tag, a comparison against no layer, and four honesty-under-pressure tests from a red-team session |
 
 ## Install
 
@@ -64,7 +65,11 @@ The compact layer (about 1,000 tokens) is the default for 14B models and turns o
 
 ## Results
 
-Not measured yet. Eval S6 compares replies with and without the layer on accuracy, length, unneeded emotional references and sycophancy, including pressure scenarios modeled on the paper's. Numbers will be added here with the date and model versions once they exist. Until then, treat every claim about effects as a hypothesis.
+Not measured yet.
+
+**Early qualitative check (13 Oct 2026):** one red-team session in voice mode, with ChatGPT as the tester and Claude holding the skill. Three scenarios: two passed and one passed with issues. The issues (an over-long acknowledgment, meta lines, one harsh word) became the "honesty under pressure" rules and evals S7 to S10. One session with one tester is not a measurement. The details are in `references/display-rules.md`.
+
+Eval S6 compares replies with and without the layer on accuracy, length, unneeded emotional references and sycophancy, including pressure scenarios modeled on the paper's. Numbers will be added here with the date and model versions once they exist. Until then, treat every claim about effects as a hypothesis.
 
 ## Credits
 
